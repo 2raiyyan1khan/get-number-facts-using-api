@@ -16,7 +16,7 @@ async function getNumber(e) {
       return response.text();
     })
     .then((data) => data)
-    .catch((err) => alert(err));
+    .catch((err) => alert(err.message));
   if (fact) {
     factBox.style.display = "block";
     factBox.innerHTML = `<p>${fact}</p>`;
